@@ -1,18 +1,18 @@
 <template>
   <div class="container-fluid">
-    <div class="h1 m-4">BERITA HARI INI</div>
+    <div class="h1 m-4 text-center">BERITA HARI INI</div>
     <div class="container">
     <div class="row">
       <div v-for="article in articles" :key="article">
         
-        <div class="card m-3" style="max-width: 540px; max-height: 720px;">
+        <div class="card m-3 text-left" style="max-width: 540px; max-height: 720px;">
           <div class="row no-gutters">
             <div class="col-md-4">
               <img :src="article.urlToImage" class="img-fluid" :alt="article.urlToImage" >
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h4 class="card-title">{{article.title}}</h4>
+                <h5 class="card-title">{{article.title}}</h5>
                 <p class="card-text">{{article.description}}</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
